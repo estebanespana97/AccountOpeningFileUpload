@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 //import dotenv from 'dotenv';
 import axios from "axios";
 //dotenv.config();
-//import getSalesforceAccessToken  from "../../server";
+import {getSalesforceAccessToken}  from "../api/api";
+import {registerUser}  from "../api/api";
 
 //hardcoded stuff
-
+/*
 async function getSalesforceAccessToken() {
   const tokenUrl = `https://interaudibank-dev-ed.develop.my.salesforce.com/services/oauth2/token`;
   try {
@@ -39,10 +40,10 @@ async function getSalesforceAccessToken() {
     throw error;
   }
 }
-
+*/
 const Register = ({ setToken }) => {
   const [selectedFile, setSelectedFile] = useState(null);
-
+/*
   async function registerUser(e) {
     e.preventDefault();
     let firstName = document.getElementById("firstname").value;
@@ -94,7 +95,7 @@ const Register = ({ setToken }) => {
       console.log(e);
     }
   }
-
+*/
   async function loginUser(e) {
     /*
 let passwordValue = document.getElementById("passwordLogin").value;
